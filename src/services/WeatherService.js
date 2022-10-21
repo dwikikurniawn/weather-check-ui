@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL='http://localhost:8082/weather';
+const API_URL='https://city-weather-check-app.herokuapp.com/weather';
 
 class WeatherService {
 

@@ -31,12 +31,12 @@ class WeatherComponent extends React.Component{
         const weatherData = this.state.weather;
         return(
             <div>
-                <h1 className="text-center"><span class="badge bg-success">Weather Check</span></h1>
+                <h1 className="text-center"><span className="badge bg-success">Weather Check</span></h1>
                 <form onSubmit={this.getWeatherByCity}>
                     <input type='text' placeholder="Enter city name" onChange={(event) => {
                         this.setState({city: event.target.value})
                     }} />
-                    <button type='submit' class="btn btn-primary">Search</button>
+                    <button type='submit' className="btn btn-primary">Search</button>
                 </form>
 
                 <form onSubmit={this.getWeatherByLongitudeLatitude}>
@@ -46,11 +46,11 @@ class WeatherComponent extends React.Component{
                     <input type='text' placeholder="Enter Latitude" onChange={(event) => {
                         this.setState({lat: event.target.value})
                     }} />
-                    <button type='submit'class="btn btn-primary">Search</button>
+                    <button type='submit'className="btn btn-primary">Search</button>
                 </form>
-                <table class='table table-striped-columns'>
+                <table className='table table-striped-columns'>
                 <thead>
-                    <tr class="table-secondary">
+                    <tr className="table-secondary">
                         <td>City</td>
                         <td>Weather</td>
                         <td>Weather Description</td>
@@ -58,8 +58,8 @@ class WeatherComponent extends React.Component{
                         <td>Latitude</td>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider">
-                                <tr class="table-success">
+                <tbody className="table-group-divider">
+                                <tr className="table-success">
                                     <td>{weatherData.city}</td>
                                     <td>{weatherData.weather}</td>
                                     <td>{weatherData.description}</td>

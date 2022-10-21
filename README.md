@@ -17,3 +17,6 @@ If some problem arises when npm install, try:
   - (`package.lock.json` will be added automatically after you run `npm install`)
 
 After the application run, you can access the UI on `localhost:3000`.
+
+## NOTE
+- This application deployed on [Heroku](https://www.heroku.com/) and you can access the application through [Weather Check UI](https://weather-check-ui.herokuapp.com/)
